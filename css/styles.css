@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+  --color: #f3f3f3;
+  --asset-colour: #0a60ff;
+  --bg: #3a3a3a;
+  --bg-panels: #4b4b4b;
+  --font-source: "Source Code Pro", monospace;
+  --font-text: "Poppins", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  background: var(--bg);
+  color: var(--color);
+  font-family: var(--font-source);
+  line-height: 2;
+  font-size: 16pt;
+  -webkit-font-smoothing: antialiased;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  height: 100%;
+  width: 100%;
+}
+header {
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 50px;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+header div {
+  max-width: 200px;
+  transform: rotate(-90deg);
+}
+
+header section {
+  max-width: 700px;
+
+  line-height: 4.5rem;
+}
+header section h1 {
+  font-size: 4rem;
+}
+header section .header-name {
+  color: var(--asset-colour);
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.section .title {
+  font-size: 2rem;
+}
+.section div {
+  margin-top: 30px;
+}
+.section div ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 20px;
+}
+
+.project-item {
+  background-color: var(--bg-panels);
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
