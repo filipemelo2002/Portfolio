@@ -24,8 +24,6 @@ body {
   line-height: 2;
   font-size: 16pt;
   -webkit-font-smoothing: antialiased;
-  display: flex;
-  flex-direction: column;
 }
 ::-webkit-scrollbar {
   width: 5px;
@@ -185,7 +183,7 @@ header section .header-name {
     justify-content: center;
   }
   header div {
-    margin-top: 50px;
+    margin-top: 10px;
     transform: rotate(0deg);
   }
 }
