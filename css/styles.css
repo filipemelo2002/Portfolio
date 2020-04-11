@@ -24,6 +24,8 @@ body {
   line-height: 2;
   font-size: 16pt;
   -webkit-font-smoothing: antialiased;
+  display: flex;
+  flex-direction: column;
 }
 ::-webkit-scrollbar {
   width: 5px;
