@@ -40,6 +40,10 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: var(--color-hover);
 }
+.content {
+  width: 100%;
+  height: 100%;
+}
 .container {
   display: flex;
   flex-direction: column;
@@ -51,7 +55,6 @@ body {
 header {
   height: 100%;
   width: 100%;
-  margin: auto;
   display: flex;
   flex-direction: row-reverse;
   padding: 50px;
@@ -93,7 +96,10 @@ header section .header-name {
   width: 32px;
   height: 32px;
 }
-
+a {
+  text-decoration: none;
+  color: var(--content-color);
+}
 .projects-section {
   display: flex;
   flex-direction: column;
@@ -188,6 +194,9 @@ header section .header-name {
   }
 }
 @media (max-width: 750px) {
+  .content {
+    height: auto;
+  }
   .projects-section .projects-grid .project {
     max-width: 95%;
     flex-direction: column;
