@@ -4,7 +4,17 @@
   outline: 0;
   box-sizing: border-box;
 }
-
+html {
+  --color-hover: #000;
+  --color: #252525;
+  --asset-colour: #0a60ff;
+  --bg: #f3f3f3;
+  --bg-panels: #333333;
+  --font-source: "Source Code Pro", monospace;
+  --font-text: "Poppins", sans-serif;
+  --content-color: #eeeeee;
+  --hightlight: #ffac41;
+}
 html,
 body {
   height: 100%;
@@ -14,16 +24,6 @@ body {
   line-height: 2;
   font-size: 16pt;
   -webkit-font-smoothing: antialiased;
-
-  --color-hover: #fff;
-  --color: #f3f3f3;
-  --asset-colour: #0a60ff;
-  --bg: #252525;
-  --bg-panels: #070707;
-  --font-source: "Source Code Pro", monospace;
-  --font-text: "Poppins", sans-serif;
-  --content-color: #adadad;
-  --hightlight: #ffac41;
 }
 ::-webkit-scrollbar {
   width: 5px;
@@ -102,16 +102,19 @@ header section .header-name {
 }
 .projects-section .projects-grid {
   display: grid;
+  margin-top: 30px;
   width: 100%;
   justify-items: center;
   grid-template-columns: repeat(2, 1fr);
+  grid-row-gap: 20px;
+  grid-column-gap: 20px;
+  padding: 10px;
 }
 .projects-section .title {
   font-size: 40px;
   font-weight: bold;
 }
 .projects-section .projects-grid .project {
-  margin-top: 100px;
   display: flex;
   flex-direction: row;
   padding: 20px;
@@ -121,7 +124,7 @@ header section .header-name {
   align-items: center;
   justify-content: space-around;
   font-family: "Fira Code", monospace;
-  background-color: var(--bg-panels);
+  background: var(--bg-panels);
   position: relative;
   -webkit-box-shadow: 0px 0px 9px -1px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 0px 9px -1px rgba(0, 0, 0, 0.75);
@@ -144,6 +147,7 @@ header section .header-name {
 }
 .project-content p {
   font-size: 20px;
+  color: var(--content-color);
 }
 .project-content section {
   max-width: 300px;
@@ -185,6 +189,7 @@ header section .header-name {
 }
 @media (max-width: 750px) {
   .projects-section .projects-grid .project {
-    max-width: 90%;
+    max-width: 95%;
+    flex-direction: column;
   }
 }

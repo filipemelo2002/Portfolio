@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/switcher.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Source+Code+Pro:wght@400;500&display=swap"
       rel="stylesheet"
@@ -106,11 +107,48 @@
               </section>
             </div>
           </div>
+
+          <div class="project">
+            <div class="action-buttons">
+              <i
+                data-feather="circle"
+                class="feather-button"
+                color="#FF605C"
+              ></i>
+              <i
+                data-feather="circle"
+                class="feather-button"
+                color="#FFBD44"
+              ></i>
+              <i
+                data-feather="circle"
+                class="feather-button"
+                color="#00CA4E"
+              ></i>
+            </div>
+            <div class="project-asset">
+              <label class="switch">
+                <input type="checkbox" name="switcher" />
+                <span class="slider round"></span>
+              </label>
+            </div>
+            <div class="project-content">
+              <p>
+                <i data-feather="link" class="feather-16"></i> Theme Switcher
+              </p>
+              <section>
+                <p>
+                  This switcher was made purely with HTML5, CSS3 and JS.
+                </p>
+              </section>
+            </div>
+          </div>
         </div>
       </div>
     </div>
     <script>
       feather.replace();
     </script>
+    <script src="./js/main.js"></script>
   </body>
 </html>
