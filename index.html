@@ -7,6 +7,11 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Source+Code+Pro:wght@400;500&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/feather-icons"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Filipe Melo</title>
   </head>
@@ -22,42 +27,88 @@
       </div>
     </header>
     <div class="container">
-      <div class="section">
-        <p class="title"><strong>Projects</strong></p>
-        <div>
-          <ul>
-            <li>
-              <div class="project-item">
-                <p>Central do Aluno</p>
-                <img src="" />
-              </div>
-            </li>
-            <li>
-              <div class="project-item">
-                <p>Central do Aluno</p>
-              </div>
-            </li>
+      <div class="projects-section">
+        <p class="title">
+          <i data-feather="box" class="feather-32"></i>Projects
+        </p>
+        <div class="projects-grid">
+          <div class="project">
+            <div class="action-buttons">
+              <i
+                data-feather="circle"
+                class="feather-button"
+                color="#FF605C"
+              ></i>
+              <i
+                data-feather="circle"
+                class="feather-button"
+                color="#FFBD44"
+              ></i>
+              <i
+                data-feather="circle"
+                class="feather-button"
+                color="#00CA4E"
+              ></i>
+            </div>
+            <div class="project-asset">
+              <img alt="Icon-Image" height="150px" src="./assets/central.png" />
+            </div>
+            <div class="project-content">
+              <p>
+                <i data-feather="link" class="feather-16"></i> Central do Aluno
+              </p>
+              <section>
+                <p>
+                  O App Central do Aluno tem o intuito de promover o acesso as
+                  informações dos estudantes de toda Rede Estadual de Ensino do
+                  estado de Pernambuco. Hoje com cerca de
+                  <span class="highlight">50 mil downloads</span> na Google
+                  Play.
+                </p>
+              </section>
+            </div>
+          </div>
 
-            <li>
-              <div class="project-item">
-                <p>Central do Aluno</p>
-              </div>
-            </li>
-
-            <li>
-              <div class="project-item">
-                <p>Central do Aluno</p>
-              </div>
-            </li>
-
-            <li>
-              <div class="project-item">
-                <p>Central do Aluno</p>
-              </div>
-            </li>
-          </ul>
+          <div class="project">
+            <div class="action-buttons">
+              <i
+                data-feather="circle"
+                class="feather-button"
+                color="#FF605C"
+              ></i>
+              <i
+                data-feather="circle"
+                class="feather-button"
+                color="#FFBD44"
+              ></i>
+              <i
+                data-feather="circle"
+                class="feather-button"
+                color="#00CA4E"
+              ></i>
+            </div>
+            <div class="project-asset">
+              <img alt="Icon-Image" height="150px" src="./assets/api.png" />
+            </div>
+            <div class="project-content">
+              <p>
+                <i data-feather="link" class="feather-16"></i> API Central do
+                Aluno
+              </p>
+              <section>
+                <p>
+                  API REST coded in <span class="highlight">NodeJs</span>. This
+                  Microservice provides to the App Central do Aluno the data
+                  that it needs, in JSON format.
+                </p>
+              </section>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+    <script>
+      feather.replace();
+    </script>
   </body>
 </html>
