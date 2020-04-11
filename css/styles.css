@@ -3,14 +3,6 @@
   padding: 0;
   outline: 0;
   box-sizing: border-box;
-  --color: #f3f3f3;
-  --asset-colour: #0a60ff;
-  --bg: #252525;
-  --bg-panels: #070707;
-  --font-source: "Source Code Pro", monospace;
-  --font-text: "Poppins", sans-serif;
-  --content-color: #adadad;
-  --hightlight: #ffac41;
 }
 
 html,
@@ -22,6 +14,31 @@ body {
   line-height: 2;
   font-size: 16pt;
   -webkit-font-smoothing: antialiased;
+
+  --color-hover: #fff;
+  --color: #f3f3f3;
+  --asset-colour: #0a60ff;
+  --bg: #252525;
+  --bg-panels: #070707;
+  --font-source: "Source Code Pro", monospace;
+  --font-text: "Poppins", sans-serif;
+  --content-color: #adadad;
+  --hightlight: #ffac41;
+}
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-hover);
 }
 .container {
   display: flex;
@@ -123,7 +140,7 @@ header section .header-name {
   justify-content: center;
 }
 .project-content {
-  padding: 20px;
+  padding: 10px;
 }
 .project-content p {
   font-size: 20px;
@@ -131,10 +148,9 @@ header section .header-name {
 .project-content section {
   max-width: 300px;
   margin-top: 30px;
-  padding-bottom: 25px;
 }
 .project-content section p {
-  line-height: 18px;
+  line-height: 20px;
   font-size: 16px;
   color: var(--content-color);
 }
