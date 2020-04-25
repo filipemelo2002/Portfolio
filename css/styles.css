@@ -127,7 +127,6 @@ a {
   justify-items: center;
   grid-template-columns: repeat(2, 1fr);
   grid-row-gap: 20px;
-  grid-column-gap: 20px;
   padding: 10px;
 }
 .title {
@@ -139,8 +138,7 @@ a {
   flex-direction: row;
   padding: 20px;
   border-radius: 8px;
-  width: 100%;
-  max-width: 600px;
+  width: 90%;
   align-items: center;
   justify-content: space-around;
   font-family: "Fira Code", monospace;
