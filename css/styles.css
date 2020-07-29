@@ -54,12 +54,40 @@ body {
 }
 .header,
 .projects,
+.bio,
 .contact {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
   flex-direction: column;
+}
+.about-me {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+.about-me img {
+  width: 90%;
+  max-width: 240px;
+  border-radius: 100%;
+  transition: 200ms;
+  cursor: pointer;
+}
+.about-me img:hover {
+  transform: scale(1.1);
+  -webkit-box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.28);
+  -moz-box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.28);
+  box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.28);
+}
+.about-me p {
+  width: 90%;
+  max-width: 500px;
+  line-height: normal;
+  text-align: justify;
 }
 .header {
   height: 100%;
@@ -221,6 +249,12 @@ a {
   header div {
     margin-top: 10px;
     transform: rotate(0deg);
+  }
+  .about-me {
+    flex-direction: column;
+  }
+  .about-me p {
+    margin-top: 20px;
   }
 }
 @media (max-width: 750px) {
